@@ -21,9 +21,9 @@
     
         }
 
-        div{
+        main{
             display: block;
-            width: 340px;
+            width: 320px;
             background-color: hsl(0, 0%, 100%);
             margin: auto;
             margin-top: 20vh;
@@ -31,26 +31,26 @@
             border-radius: 15px;
         }
 
-        main{
-            width: 330px;
-            height: 330px;
+        div.qrcode{
+            height: 320px;
         }
 
-        main.qrcode > img{
+        div.qrcode > img{
             position: absolute;
+            width: 300px;
             border-radius: 15px;
-            margin-left: 5px;
+            margin-left: 10px;
             margin-top: 5px;
         }
 
-        h1{
+        div > h1{
             font-size: 25px;
-            margin: 20px 0px 0px 0px;
+            margin: 0px;
             text-align: center;
             padding: 20px 20px 0px 20px;
         }
 
-        p{
+        div > p{
             font-size: 15px;
             color: hsl(220, 15%, 55%);
             text-align: center;
@@ -60,13 +60,15 @@
     </style>
 </head>
 <body>
-    <div>
-        <main class="qrcode">
-            <img src="imagem/image-qr-code.png" alt="Qr code do Frontend mentor" width="330px" height="330px">
-        </main>
+    <main>
+        <div class="qrcode">
+            <img src="imagem/image-qr-code.png" alt="Qr code do Frontend mentor">
+        </div>
         
-        <h1>Improve your front-end skills by building projects</h1>
-        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
+        <div class="descricao">
+            <h1>Improve your front-end skills by building projects</h1>
+            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+    </main>
 </body>
 </html>
